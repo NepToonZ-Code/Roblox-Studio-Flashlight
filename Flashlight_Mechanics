@@ -1,0 +1,46 @@
+local player = game.Players.LocalPlayer
+local userInputService = game:GetService("UserInputService")
+
+local flashlightKey = Enum.KeyCode.F  -- Change this to the desired key
+
+local flashlight = Instance.new("SpotLight")
+flashlight.Color = Color3.fromRGB(115, 153, 86) -- Set the light color (optional)
+flashlight.Brightness = 0 -- Set the light brightness (optional)
+flashlight.Range = 25  -- Set the light range (optional)
+flashlight.Enabled = false  -- Initially, the flashlight is off
+
+-- Attach the PointLight to the player's character (e.g., head or hand)
+-- Replace "Head" with the desired attachment name (e.g., "RightHand")
+flashlight.Parent = player.Character.Head
+
+-- Function to toggle the flashlight on and off
+local function toggleFlashlight()
+	flashlight.Enabled = not flashlight.Enabled
+	flashlight.Brightness = 0
+	if flashlight.Enabled then
+		for i = 1, 10 do
+			flashlight.Brightness = flashlight.Brightness + 1
+			wait(0.01)
+		end
+	else
+		for i =1, 10 do
+			flashlight.Brightness = flashlight.Brightness - 1
+			wait(0.01)
+		end
+	end
+end
+
+		
+
+-- Function to handle key presses
+local function onKeyPress(input, gameProcessedEvent)
+	if not gameProcessedEvent and input.KeyCode == flashlightKey then
+		toggleFlashlight()
+	end
+end
+
+
+-- Connect the key press event
+userInputService.InputBegan:Connect(onKeyPress)
+
+
