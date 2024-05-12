@@ -1,4 +1,5 @@
-**!!!ATTENTION: Might not work correctly alongside the FirstPersonScript**
+**!!!ATTENTION: Might not work correctly**
+<br>
 Credits could me pretty nice, thanks!
 
 ╔╗░╔╗░░░░░░╔╗░╔╗░░░░░░╔╗░╔╗░░░░░░╔╗░╔╗░░░░░░░░
