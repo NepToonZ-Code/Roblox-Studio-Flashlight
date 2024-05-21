@@ -1,6 +1,6 @@
 **!!!ATTENTION: Might not work correctly**
 <br>
-Credits could me pretty nice, thanks!
+Credits could be pretty nice, thanks!
 
 ╔╗░╔╗░░░░░░╔╗░╔╗░░░░░░╔╗░╔╗░░░░░░╔╗░╔╗░░░░░░░░
 ║║░║║░░░░░░║║░║║░░░░░░║║░║║░░░░░░║║░║║░░░░░░░░
